@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<license><![CDATA[
+/**
+ * Are you human?
+ *
+ * @author emanuele
+ * @license   BSD http://opensource.org/licenses/BSD-3-Clause
+ *
+ * @version 0.0.1
+ */
+	]]></license>
+	<id>emanuele:are_you_human</id>
+	<name>Are you human?</name>
+	<version>0.0.1</version>
+	<type>modification</type>
+	<install for="1.0 - 1.0.99">
+		<require-file name="AreYouHuman.class.php" destination="SUBSDIR" />
+		<require-file name="AreYouHuman.template.php" destination="$themedir" />
+		<require-file name="AreYouHuman.english.php" destination="$languagedir" />
+		<hook hook="integrate_control_verification" file="SOURCEDIR/subs/AreYouHuman.class.php" function="add_are_you_human" />
+	</install>
+	<uninstall for="1.0 - 1.0.99">
+		<remove-file name="SUBSDIR/AreYouHuman.class.php" />
+		<remove-file name="$themedir/AreYouHuman.template.php" />
+		<remove-file name="$languagedir/AreYouHuman.english.php" />
+		<hook reverse="true" hook="integrate_control_verification" file="SOURCEDIR/subs/AreYouHuman.class.php" function="add_are_you_human" />
+	</uninstall>
+</package-info>
