@@ -58,6 +58,11 @@ class Control_Verification_Areyouhuman implements Control_Verifications
 		return true;
 	}
 
+	public function hasVisibleTemplate()
+	{
+		return true;
+	}
+
 	public function settings()
 	{
 		global $txt, $scripturl, $modSettings;
