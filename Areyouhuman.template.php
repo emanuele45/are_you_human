@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * Are you human?
+ *
+ * @author  emanuele
+ * @license BSD http://opensource.org/licenses/BSD-3-Clause
+ *
+ * @version 0.0.2
+ *
+ */
+
 function template_control_verification_areyouhuman($verify_id, $verify_context)
 {
 	global $context, $txt;

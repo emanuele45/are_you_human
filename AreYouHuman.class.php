@@ -1,5 +1,23 @@
 <?php
 
+/**
+ * Are you human?
+ *
+ * @author  emanuele
+ * @license BSD http://opensource.org/licenses/BSD-3-Clause
+ *
+ * @version 0.0.2
+ *
+ */
+
+/**
+ * A demo addon to show how to create a simple new anti-spam
+ * measure and let ElkArte use it
+ */
+
+/**
+ * This function adds the test to the list of known ones
+ */
 function add_are_you_human(&$known_verifications)
 {
 	$known_verifications[] = 'areyouhuman';
